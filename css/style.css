@@ -149,6 +149,17 @@ footer h3 {
     color: #219ebc;
     font-weight: bold;
     font-size: xx-large;
+    animation: desvanecer 2s infinite;
+}
+
+@keyframes desvanecer {
+    to {
+        opacity: 1;
+    }
+
+    from {
+        opacity: 0;
+    }
 }
 
 div.principalServicios {
@@ -170,10 +181,12 @@ div.principalServicios {
     font-weight: 600px;
     font-style: oblique;
     text-align: center;
+    transition: font-size 2s;
 }
 
-.cardServiciosNova :hover {
-    color: brown;
+.cardServiciosNova a:hover {
+    color: rgb(145, 47, 47);
+    font-size: xx-large;
 }
 
 .cardServiciosNova img {
@@ -185,6 +198,12 @@ div.principalServicios {
     margin-right: 20px;
     margin-bottom: 10px;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: transform 5s, width 2s;
+}
+
+.cardServiciosNova img:hover {
+    width: 350px;
+    transform: rotate(90deg);
 }
 
 .videosTutoriales {
@@ -223,7 +242,9 @@ div.principalServicios {
 }
 
 .portadaQuienesSomos p {
+    padding-top: 20px;
     font-size: larger;
+    transform: translateY(20px);
 }
 
 .misionVisionPoliticas {
@@ -273,8 +294,27 @@ div.principalServicios {
     text-align: center;
     padding: 30px;
     border: solid black 5px;
-    background-color: #8ecae6;
     padding-bottom: 20px;
+    animation-name: cambioGradiente;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
+    animation-delay: 1s;
+
+}
+
+@keyframes cambioGradiente {
+    to {
+        background: #2980B9;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+        background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+    }
+
+    from {
+        background: #1c92d2;
+        background: -webkit-linear-gradient(to bottom, #f2fcfe, #1c92d2);
+        background: linear-gradient(to bottom, #f2fcfe, #1c92d2);
+    }
 }
 
 .cardTelas h2 {
@@ -316,18 +356,28 @@ div.principalServicios {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 50vw;
-    margin: 50px;
+    width: 60vw;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: white;
     border: solid 3px black;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    transition: height 3s;
+}
+
+.productosDotacion:hover {
+    height: 250px;
 }
 
 .descripcionProducto {
     padding-left: 70px;
     padding-right: 70px;
 }
+
 .productosDotacion p {
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -358,6 +408,7 @@ div.principalServicios {
     height: 400px;
     width: 400px;
     border: solid 3px lightgrey;
+    border-radius: 30px;
 }
 
 .imagenesSeguridad {
@@ -369,9 +420,6 @@ div.principalServicios {
 .cardProductosSec {
     margin: 30px;
     padding-bottom: 30px;
-    color: #ffb703;
-    font-weight: 600;
-    font-style: italic;
     text-align: center;
 }
 
@@ -390,12 +438,20 @@ div.principalServicios {
 }
 
 .tituloContactanos {
-    margin-top: 130px;
+    margin-top: 110px;
     text-align: center;
 }
 
 .datos {
     margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset {
+    font-size: large;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 form fieldset div label {
@@ -406,14 +462,38 @@ form fieldset legend {
     color: white;
 }
 
+label {
+    padding-right: 20px;
+}
+
+.nombre label {
+    padding-right: 110px;
+}
+
+.telefono label {
+    padding-right: 110px;
+}
+
+input {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
 .mensaje {
     display: flex;
     margin-bottom: 20px;
 }
 
+.mensaje label {
+    padding-right: 120px;
+}
+
 
 /* MOBILE: < 576PX */
 @media screen and (max-width: 576px) {
+    body {
+        font-size: medium;
+    }
 
     header {
         display: flex;
@@ -425,6 +505,7 @@ form fieldset legend {
         margin: 0;
         padding-top: 20px;
         padding-left: 6px;
+        padding-right: 6px;
         font-size: small;
     }
 
@@ -490,11 +571,13 @@ form fieldset legend {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #secImg img {
         height: 250px;
-        width: 80vw;
+        width: 70vw;
         border: solid 3px darkgrey;
         border-radius: 20px;
     }
@@ -519,14 +602,14 @@ form fieldset legend {
     .portadaQuienesSomos {
         height: 100vh;
         text-align: center;
-        padding-top: 8%;
+        padding-top: 12%;
         padding-bottom: 8%;
         margin: 50px;
     }
 
     .portadaQuienesSomos h1 {
         margin-top: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .misionVisionPoliticas h2 {
@@ -548,6 +631,28 @@ form fieldset legend {
 
     .tituloContactanos {
         margin-top: 200px;
+    }
+
+    .tituloDotacion {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    .descripcionProducto {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .productosDotacion {
+        width: 80vw;
+    }
+
+    .productosDotacion h2 {
+        font-size: medium;
+    }
+
+    .productosDotacion p {
+        font-size: medium;
     }
 
 }
