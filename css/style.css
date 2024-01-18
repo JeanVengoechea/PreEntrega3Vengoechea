@@ -53,6 +53,7 @@ p {
 }
 
 /* header */
+
 header {
   display: flex;
   justify-content: space-evenly;
@@ -91,6 +92,7 @@ header nav ul li:hover {
 }
 
 /* footer */
+
 #piePagina {
   display: flex;
   justify-content: space-evenly;
@@ -136,6 +138,7 @@ footer h3 {
 }
 
 /* main index */
+
 .portadaPrincipal img {
   width: 100%;
   height: auto;
@@ -232,6 +235,7 @@ div.principalServicios {
 }
 
 /* main page quienes somos */
+
 .portadaQuienesSomos {
   height: 90vh;
   text-align: center;
@@ -267,6 +271,7 @@ div.principalServicios {
 }
 
 /* main page telas */
+
 .tituloTelas,
 .tituloSeguridad,
 .tituloDotacion {
@@ -315,6 +320,7 @@ div.principalServicios {
 }
 
 /* main page dotacion */
+
 .tituloDotacion h1 {
   margin-bottom: 30px;
 }
@@ -376,6 +382,7 @@ div.principalServicios {
 }
 
 /* main page seguridad */
+
 .tituloSeguridad h1 {
   margin-bottom: 30px;
 }
@@ -407,6 +414,7 @@ div.principalServicios {
 }
 
 /* main page contactanos */
+
 .formulario {
   height: 80vh;
   display: flex;
@@ -464,6 +472,7 @@ input {
 }
 
 /* TABLET: < 1024PX */
+
 @media screen and (max-width: 1024px) {
   header {
     display: flex;
@@ -491,6 +500,11 @@ input {
     padding-bottom: 40px;
   }
 
+  .misionVisionPoliticas {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
   .tituloDotacion {
     margin-top: 170px;
   }
@@ -506,6 +520,7 @@ input {
 
 
 /* MOBILE: < 630PX */
+
 @media screen and (max-width: 630px) {
   body {
     font-size: medium;
@@ -584,7 +599,7 @@ input {
     margin-left: 20px;
     margin-right: 20px;
   }
-  
+
   #secImg img {
     height: 200px;
     width: 50vw;
@@ -625,7 +640,7 @@ input {
     display: flex;
     flex-direction: column;
     margin-top: 300px;
-    padding-top: 200px;
+    padding-top: 250px;
   }
 
   .misionVisionPoliticas h2 {
@@ -646,8 +661,8 @@ input {
   }
 
   .imagenesSeguridad img {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
   }
 
   fieldset {
