@@ -256,6 +256,8 @@ div.principalServicios {
 .misionVisionPoliticas {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .misionVisionPoliticas h2 {
@@ -271,7 +273,10 @@ div.principalServicios {
 }
 
 /* main page telas */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
 .tituloTelas,
 .tituloSeguridad,
 .tituloDotacion {
@@ -491,7 +496,10 @@ input {
   .portadaQuienesSomos {
     height: 100vh;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   .portadaQuienesSomos h1 {
     margin-top: 90px;
   }
@@ -500,11 +508,14 @@ input {
     padding-bottom: 40px;
   }
 
+<<<<<<< HEAD
   .misionVisionPoliticas {
     margin-top: 30px;
     padding-top: 30px;
   }
 
+=======
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   .tituloDotacion {
     margin-top: 170px;
   }
@@ -519,13 +530,18 @@ input {
 }
 
 
+<<<<<<< HEAD
 /* MOBILE: < 630PX */
 
+=======
+/* MOBILE: < 576PX */
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
 @media screen and (max-width: 630px) {
   body {
     font-size: medium;
   }
 
+<<<<<<< HEAD
   header nav ul {
     font-size: 13px;
   }
@@ -536,6 +552,14 @@ input {
     font-size: smaller;
   }
 
+=======
+  header nav ul li {
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: small;
+  }
+
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   header .logoHeader img {
     width: 100px;
     height: auto;
@@ -644,7 +668,11 @@ input {
     display: flex;
     flex-direction: column;
     margin-top: 300px;
+<<<<<<< HEAD
     padding-top: 250px;
+=======
+    padding-top: 200px;
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   }
 
   .misionVisionPoliticas h2 {
@@ -665,8 +693,13 @@ input {
   }
 
   .imagenesSeguridad img {
+<<<<<<< HEAD
     height: 280px;
     width: 280px;
+=======
+    height: 250px;
+    width: 250px;
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   }
 
   fieldset {
@@ -694,16 +727,20 @@ input {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .productosDotacion {
     margin-left: 20px;
     margin-right: 20px;
   }
 
+=======
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   .descripcionProducto {
     padding-left: 10px;
     padding-right: 10px;
   }
 
+<<<<<<< HEAD
   .cardDotacion img {
     height: 150px;
     width: 130px;
@@ -711,6 +748,8 @@ input {
     border-radius: 20px;
   }
 
+=======
+>>>>>>> 42011e5310a176f7d5a34cbeee57dd611d6f963c
   .productosDotacion {
     width: 80vw;
   }
